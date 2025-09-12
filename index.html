@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">John Doe</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section home">
+        <div class="home-content">
+            <h1>Welcome, I'm John Doe</h1>
+            <p>Software Engineering Undergraduate</p>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="about-content">
+            <div class="profile-photo">
+                <img src="https://via.placeholder.com/200" alt="Profile Photo">
+            </div>
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>I'm a passionate Software Engineering student with a keen interest in web development, AI, and software design. Currently pursuing my degree, I enjoy building innovative projects and learning new technologies.</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="cv.pdf" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-title="Project 1" data-desc="Description of Project 1. A web app built with React." data-link="https://example.com">
+                <h3>Project 1</h3>
+                <p>Short intro to Project 1.</p>
+            </div>
+            <div class="project-card" data-title="Project 2" data-desc="Description of Project 2. Machine learning model." data-link="https://example.com">
+                <h3>Project 2</h3>
+                <p>Short intro to Project 2.</p>
+            </div>
+            <div class="project-card" data-title="Project 3" data-desc="Description of Project 3. Mobile app." data-link="https://example.com">
+                <h3>Project 3</h3>
+                <p>Short intro to Project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <span>HTML/CSS</span>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>React</span>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Find Me</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <p>Phone: +1-123-456-7890</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Modal for Projects -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <a id="modal-link" href="#" target="_blank">View Demo</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
