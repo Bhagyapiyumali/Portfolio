@@ -19,12 +19,29 @@
         </ul>
     </nav>
 
-    <section id="home" class="section home">
-        <div class="home-content">
-            <h1>Welcome, I'm Bhagya Piyumali Senevirathna</h1>
-            <p>Software Engineering Undergraduate</p>
+     <section id="home" class="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h1 class="home-title">
+                    Hi, I'm <span class="highlight">Bhagya Piyumali Senevirathna</span>
+                </h1>
+                <p class="home-subtitle">Software Engineering Undergraduate</p>
+                <p class="home-description">
+                    Passionate about creating innovative solutions and building amazing digital experiences.
+                </p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
         </div>
     </section>
+
 
     <section id="about" class="section about">
         <div class="about-content">
@@ -35,7 +52,7 @@
                 <h1>About Me</h1>
                 <p>I'm a passionate Software Engineering student with a keen interest in web development, AI, and software design. Currently pursuing my degree, I enjoy building innovative projects and learning new technologies.</p>
                 <div class="social-icons">
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/bhagya-senevirathna-0a5968302/" target="_blank">LinkedIn</a>
                     <a href="https://facebook.com" target="_blank">Facebook</a>
                     <a href="E:/portfolio/CV.pdf" download>Download CV</a>
                 </div>
@@ -47,15 +64,15 @@
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card" data-title="Project 1" data-desc="Description of Project 1. A web app built with React." data-link="https://example.com">
-                <h3>Project 1</h3>
+                <h3>Diet Plan Web Application</h3>
                 <p>Short intro to Project 1.</p>
             </div>
             <div class="project-card" data-title="Project 2" data-desc="Description of Project 2. Machine learning model." data-link="https://example.com">
-                <h3>Project 2</h3>
+                <h3>To Do List Web Application</h3>
                 <p>Short intro to Project 2.</p>
             </div>
             <div class="project-card" data-title="Project 3" data-desc="Description of Project 3. Mobile app." data-link="https://example.com">
-                <h3>Project 3</h3>
+                <h3>Film Searching Application3</h3>
                 <p>Short intro to Project 3.</p>
             </div>
         </div>
@@ -74,7 +91,7 @@
             </div>
             <div class="skill">
                 <span>Python</span>
-                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
             </div>
             <div class="skill">
                 <span>React</span>
@@ -89,10 +106,11 @@
             <p>Email: <a href="mailto:bhagyapiyumali2001@gmail.com">bhagyapiyumali2001@gmail.com</a></p>
             <p>Phone: +94 71 371 8585</p>
         </div>
-        <form class="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
+        <form class="contact-form" action="https://formspree.io/f/movnzvej" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="_replyto" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="hidden" name="_subject" value="New message from your portfolio!">
             <button type="submit">Send</button>
         </form>
     </section>
