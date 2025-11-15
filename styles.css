@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f4f7fa;
+    color: #353434;
+    background-color: #9c9ea0;
     scroll-behavior: smooth;
 }
 
@@ -18,7 +18,7 @@ h1, h2 {
 
 a {
     text-decoration: none;
-    color: #0d6efd;
+    color: #206ee2;
 }
 
 /* Navigation Bar */
