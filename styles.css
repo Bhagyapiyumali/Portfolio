@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #353434;
-    background-color: #9c9ea0;
+    background-color: #6d56c138;
     scroll-behavior: smooth;
 }
 
@@ -133,14 +133,14 @@ a {
 }
 
 .btn-primary {
-    background: rgba (255, 255, 255, 0.15);
+    background: rgba (255, 255, 255, 0.1);
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .btn-primary:hover {
-    background: transparent;
-    color: #667eea;
+    background:rgba(255, 255, 255, 0.1) ;
+    
     transform: translateY(-2px);
 }
 
